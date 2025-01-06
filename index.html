@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Stray</title>
@@ -29,8 +29,13 @@
         margin-top: 30px; /* Space between text and images */
       }
 
-      .image-row img {
-        width: 30%; /* Set each image to take up 30% of the row */
+      .image-container {
+        width: 30%; /* Each container takes up 30% of the row */
+        text-align: center; /* Center-align the text underneath the image */
+      }
+
+      .image-container img {
+        width: 100%; /* Image will take up the full width of its container */
         height: auto; /* Maintain aspect ratio */
       }
 
@@ -60,9 +65,23 @@
 
     <!-- Image Row -->
     <div class="image-row">
-      <img src="Stray Cat.jpg" alt="Left Image">
-      <img src="Robot Stray.jpg" alt="Center Image">
-      <img src="Zurks Stray.jpg" alt="Right Image">
+      <!-- Left Image with Text -->
+      <div class="image-container">
+        <img src="Stray Cat.jpg" alt="Stray Cat">
+        <p>Our unnamed protagonist! We play him traveling through a cyberpunk world to get back home to his family.</p>
+      </div>
+
+      <!-- Center Image with Text -->
+      <div class="image-container">
+        <img src="Robot Stray.jpg" alt="Robot Stray">
+        <p>These NPC's come in all sorts of styles, personalities, and interactions for out protagonist along the way.</p>
+      </div>
+
+      <!-- Right Image with Text -->
+      <div class="image-container">
+        <img src="Zurks Stray.jpg" alt="Zurks Stray">
+        <p>One of the main protagonists of the game, the <bold>Zurks</bold>are an evolved bacteria set to attack anyone in its path!</p>
+      </div>
     </div>
   </body>
 </html>
